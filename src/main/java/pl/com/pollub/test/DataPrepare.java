@@ -18,7 +18,7 @@ import java.util.Random;
 public class DataPrepare {
 
     public static List<Person> prepareData(int listSize) {
-        List<Person> persons = new ArrayList<>();
+        List<Person> persons = new LinkedList<>();
         Random rand = new Random();
         for (int i = 0; i < listSize; i++) {
             Person person = generatePerson(rand);
